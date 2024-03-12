@@ -1,0 +1,400 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root {
+  --main-color: #3b82f6;
+  --second-color: #8b5cf6;
+  --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --hover-bg: rgba(0, 0, 0, 0.05);
+  --border-color: #dadde1;
+}
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 3.75rem;
+  word-wrap: break-word;
+}
+li{
+  list-style: none;
+}
+section ul li,
+section ol li {
+  line-height: 2.25;
+}
+code {
+  background-color: #f6f7f8;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 0.1rem;
+  border-radius: 0.4rem;
+  vertical-align: middle;
+}
+pre{
+  white-space:pre-wrap
+}
+
+.font-12 {
+  font-size: 12px;
+}
+.font-14 {
+  font-size: 14px;
+}
+
+.default-shadow {
+  box-shadow: var(--shadow);
+}
+
+.offcanvas-header {
+  padding: 15px 1rem !important;
+}
+
+.navbar {
+  box-shadow: var(--shadow);
+  height: 3.75rem;
+}
+
+.navbar-brand > .logo {
+  width: 110px;
+  border-radius: 10px;
+  margin: -10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 8px 14px;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: 500;
+  color: #1c1e21;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--second-color);
+}
+
+.visitBtn {
+  font-size: 14px;
+  padding: 8px 0;
+}
+.navImage{
+
+}
+
+/* hero section */
+.hero-section {
+  padding: 12em 20px;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.562),rgba(0, 0, 0,0.562)),url(../images/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-section .hero-img {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_title {
+  font-size: 3rem;
+  transition: 0.4s;
+}
+.hero_subtitle {
+  font-size: 1.4rem;
+  color: #fff;
+  transition: 0.4s;
+}
+.hero-section .hero-text h1 {
+  margin-bottom: 19px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-section .hero-text p {
+  color: #e5e5e5;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 32px;
+  font-family: "Poppins", sans-serif;
+}
+.demo-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 30px 14px 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #677283;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+}
+.demo-button:hover{
+  background: #4b535f;
+  color: #fff;
+}
+
+.buy-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 30px 14px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 15px;
+  color: #fff;
+  background: #495252;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+}
+.buy-button:hover{
+  background: #2d3636;
+  color: #fff;
+}
+.playStore-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 14px 30px 14px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 15px;
+  color: #fff;
+  background: #5a7b99;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+}
+
+.playStore-button:hover {
+  background: #2b5378;
+  color: #fff;
+}
+.documentaionButton {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 14px 30px 14px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 15px;
+  color: #fff;
+  background: #33686e;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+}
+
+.documentaionButton:hover {
+  background: #358992;
+  color: #fff;
+}
+.youtubeButton{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 14px 30px 14px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 15px;
+  color: #fff;
+  background: #990014;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+}
+.youtubeButton:hover {
+  background: #db0421;
+  color: #fff;
+}
+
+/* footer section */
+.socal-link{
+  margin-bottom: 8px;
+}
+.footer-section {
+  background: #1f2324;
+  color: #fff;
+  padding: 3rem 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.footer-section a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-section .footer_title {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-section a {
+  font-size: 14px;
+}
+.footer-section p {
+  font-size: 14px;
+}
+.footer-section .footerLogo {
+  filter: brightness(0%) invert(1);
+  margin-bottom: 0.5rem;
+}
+.footer-section .socal-link i{
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  background: #4a5756;
+  border: 1px solid #4a5756;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.footer-section .socal-link i:hover{
+  border: none;
+  background: #7eb4b4;
+  color: #fff;
+}
+.footer-section .socal-link a{
+  margin: 10px 2px ;
+}
+
+.footer-section .demo-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 20px;
+  margin-top: 10px;
+  margin-left: 8px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #677283;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+}
+.footer-section .demo-button:hover{
+  background: #4b535f;
+  color: #fff;
+}
+
+.footer-section .buy-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 15px;
+  color: #fff;
+  background: #495252;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+}
+.footer-section .buy-button:hover{
+  background: #2d3636;
+  color: #fff;
+}
+
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 60px);
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  /* flex-flow: column-reverse; */
+}
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 5em 10px
+  }
+  
+  .hero_title {
+    font-size: 2rem;
+    padding: 5em 20px;
+  }
+  .hero-section .hero-text h1 {
+    margin-top: 25px;
+  }
+  .hero-section{
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: auto !important;
+}
+.hero-section .column-one{
+  width: 100%;
+  order: 2;
+}
+  .hero_subtitle {
+    font-size: 1rem;
+    color: #fff;
+  }
+  .hero_btn {
+    font-size: 16px;
+    transition: 0.4s;
+  }
+  .header {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width:465px){
+  .hero-section {
+    padding: 5em 10px;
+  }
+  body{
+    font-size: 14px;
+  }
+  .pagination-nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .pagination-nav-item{
+    max-width: 100%;
+    flex-grow: 1;
+  }
+  .pagination-nav-item-next{
+    margin: 0;
+  }
+  .pagination-nav-link{
+    padding: 12px;
+  }
+  .demo-button,
+  .buy-button,
+  .playStore-button {
+    font-size: 15px;
+    padding: 8px 16px 10px 16px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width:375px) {
+
+  .demo-button,
+  .buy-button,
+  .playStore-button {
+    font-size: 15px;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
